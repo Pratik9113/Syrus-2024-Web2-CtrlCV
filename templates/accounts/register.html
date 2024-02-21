@@ -1,0 +1,136 @@
+{% include "header.html" %}
+<section class="bg-gray-50 dark:bg-gray-900">
+  <div
+    class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0"
+  >
+    <a
+      href="#"
+      class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white"
+    >
+      <img
+        class="w-8 h-8 mr-2"
+        src="data:image/png;base64,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"
+        alt="logo"
+      />
+      GreyMatter
+    </a>
+    <div
+      class="w-full bg-black rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700"
+    >
+      <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
+        <h1
+          class="text-xl font-bold leading-tight tracking-tight text-white md:text-2xl dark:text-white"
+        >
+          Create an account
+        </h1>
+
+        <form
+          action="/accounts/register/"
+          class="space-y-4 md:space-y-6"
+          method="POST"
+        >
+          {% csrf_token %} {% include "base/alert.html"%}
+          <div>
+            <label
+              for="first_name"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              >Name</label
+            >
+            <input
+              type="first_name"
+              name="first_name"
+              id="first_name"
+              placeholder="••••••••"
+              class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              required=""
+            />
+          </div>
+          <div>
+            <label
+              for="last_name"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              >Name</label
+            >
+            <input
+              type="last_name"
+              name="last_name"
+              id="last_name"
+              placeholder="••••••••"
+              class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              required=""
+            />
+          </div>
+          <div>
+            <label
+              for="email"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              >Your email</label
+            >
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="name@company.com"
+              required=""
+            />
+          </div>
+          <div>
+            <label
+              for="password"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              >Password</label
+            >
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="••••••••"
+              class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              required=""
+            />
+          </div>
+
+          <div class="flex items-start">
+            <div class="flex items-center h-5">
+              <input
+                id="terms"
+                aria-describedby="terms"
+                type="checkbox"
+                class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800"
+                required=""
+              />
+            </div>
+            <div class="ml-3 text-sm">
+              <label
+                for="terms"
+                class="font-light text-gray-500 dark:text-gray-300"
+                >I accept the
+                <a
+                  class="font-medium text-primary-600 hover:underline dark:text-primary-500"
+                  href="#"
+                  >Terms and Conditions</a
+                ></label
+              >
+            </div>
+          </div>
+          <button
+            type="submit"
+            class="w-full text-white bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-500 dark:hover:bg-blue-600 dark:focus:ring-blue-800"
+          >
+            Create an account
+          </button>
+
+          <p class="text-sm font-light text-gray-500 dark:text-gray-400">
+            Already have an account?
+            <a
+              href="accounts/login"
+              class="font-medium text-primary-600 hover:underline dark:text-primary-500"
+              >Login here</a
+            >
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
